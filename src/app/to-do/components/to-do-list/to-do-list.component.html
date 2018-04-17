@@ -1,0 +1,13 @@
+<ol>
+  <li>
+    <mat-selection-list>
+      <mat-list-option *ngFor="let toDo of listToDo | async">
+        {{ toDo.name }}
+      </mat-list-option>
+    </mat-selection-list>
+  </li>
+  <li>
+    <button mat-raised-button (click)="openDialog()">Pick one</button>
+  </li>
+</ol>
+
